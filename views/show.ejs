@@ -1,0 +1,24 @@
+<%include ./partials/header%>
+
+<div class="container main">
+  <div class="well">
+  <h3 class="panel-title"><%=blog.title%></h3>
+    <div class="panel-body">
+    <%=blog.text%>
+    </div>
+    <div class="panel-body">
+      <img src="<%=blog.image%>">
+    </div>
+    <div class="panel-body">
+      <a class="btn btn-primary" href="/blogs/<%=blog._id%>/edit">Edit</a>
+      <form id="delete" action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+        <button class="btn btn-primary" type="submit">Delete</button>
+      </form>
+    </div>
+    <div class="panel-body">
+      <span><strong>Posted on </strong><%=blog.createdDate.toDateString()%></span>
+    </div>
+  </div>
+</div>
+
+<%include ./partials/footer%>

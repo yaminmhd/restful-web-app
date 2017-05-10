@@ -1,0 +1,20 @@
+.container.main{
+  margin-top: 5em;
+}
+
+.form-signin{
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#delete{
+  display: inline;
+}
+
+.thumbnail img{
+  width: 100%;
+}
+
+.thumbnail{
+  padding:0;
+}
